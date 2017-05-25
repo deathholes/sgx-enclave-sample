@@ -186,8 +186,8 @@ int SGX_CDECL main(int argc, char *argv[])
     }
 
 	char *str = (char*)malloc(20);
-	strcpy(str,"JAVA IS SHIT");
-	str[12]='\0';
+	strcpy(str,"RANDOM STRING");
+	str[14]='\0';
 	
 	printf("\nbefore: %s",str);
 	int ret = ecall_garble_up_string(global_eid, str);

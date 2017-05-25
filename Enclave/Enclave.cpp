@@ -77,7 +77,7 @@ void ecall_garble_up_string( char *string)
     int i=len;
 
 	//arithmetic exception. can be handled. Type : HARDWARE , Type: SGX_EXCEPTION_VECTOR_DE
-//    int x = 5/0;		//After adding a breakpoint at line #11, in debug mode, it is showing that the control is reaching there.
+    int x = 5/0;		//After adding a breakpoint at line #11, in debug mode, it is showing that the control is reaching there.
     
 	//SIGSEGV Error reading non allocated pointer.
     char *ch = NULL;
